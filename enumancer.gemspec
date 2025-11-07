@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name        = 'enumancer'
-  spec.version     = '1.0.0'
+  spec.version     = '1.0.1'
   spec.summary     = 'Easy to use typed enums.'
   spec.description = <<DESC
     Enumancer provides a predictable, type-safe registry for named values.
@@ -8,12 +8,12 @@ Gem::Specification.new do |spec|
 DESC
   spec.authors     = ['Łasačka']
   spec.email       = 'saikinmirai@gmail.com'
-  spec.files       = ['lib/enum.rb']
+  spec.files = Dir['lib/**/*.rb']
   spec.homepage    = 'https://github.com/lasaczka/enumancer'
 
   spec.metadata['changelog_uri'] = "#{spec.homepage}/blob/main/CHANGELOG.md"
   spec.metadata['bug_tracker_uri'] = "#{spec.homepage}/issues"
-  spec.metadata['documentation_uri'] = "https://rubydoc.info/gems/kolor/#{spec.version}"
+  spec.metadata['documentation_uri'] = "https://rubydoc.info/gems/enumancer/#{spec.version}"
 
   spec.license       = 'BSD-3-Clause-Attribution'
   spec.required_ruby_version = '>= 3.0.0'
